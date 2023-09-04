@@ -1,33 +1,33 @@
-candidate,votes
-Donald Trump,62984825
-Hillary Clinton,65853516
-Gary Johnson,4489221
-Jill Stein,1429596
-Evan McMullin,510002
-Darrell Castle,186545
-Gloria La Riva,74117
-Rocky De La Fuente,33010
- None of these candidates,28863
-Richard Duncan,24235
-Dan Vacek,13537
-Alyson Kennedy,12465
-Mike Smith,9095
-Chris Keniston,6909
-Lynn Kahn,5637
-Jim Hedges,5609
-Monica Moorehead,4063
-Peter Skewes,3246
-Rocky Giordani,2752
-Emidio Soltysik,2480
-Scott Copeland,2356
-Tom Hoefling,2291
-Laurence Kotlikoff,1440
-Kyle Kopitke,1096
-Joseph Maldonado,872
-Michael Maturen,862
-Rod Silva,751
-Princess Jacob,749
-Ryan Scott,749
-Bradford Lyttle,382
-Jerry White,370
-Frank Atwood,337
+ID,candidate,votes
+1,Donald Trump,62984825
+2,Hillary Clinton,65853516
+3,Gary Johnson,4489221
+4,Jill Stein,1429596
+5,Evan McMullin,510002
+6,Darrell Castle,186545
+7,Gloria La Riva,74117
+8,Rocky De La Fuente,33010
+9, None of these candidates,28863
+10,Richard Duncan,24235
+11,Dan Vacek,13537
+12,Alyson Kennedy,12465
+13,Mike Smith,9095
+14,Chris Keniston,6909
+15,Lynn Kahn,5637
+16,Jim Hedges,5609
+17,Monica Moorehead,4063
+18,Peter Skewes,3246
+19,Rocky Giordani,2752
+20,Emidio Soltysik,2480
+21,Scott Copeland,2356
+22,Tom Hoefling,2291
+23,Laurence Kotlikoff,1440
+24,Kyle Kopitke,1096
+25,Joseph Maldonado,872
+26,Michael Maturen,862
+27,Rod Silva,751
+28,Princess Jacob,749
+29,Ryan Scott,749
+30,Bradford Lyttle,382
+31,Jerry White,370
+32,Frank Atwood,337
