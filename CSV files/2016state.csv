@@ -1,0 +1,307 @@
+"","county","fips","candidate","state","votes"
+"1",NA,"AK","Donald Trump","AK",163387
+"2",NA,"AK","Hillary Clinton","AK",116454
+"3",NA,"AK","Gary Johnson","AK",18725
+"4",NA,"AK","Jill Stein","AK",5735
+"5",NA,"AK","Darrell Castle","AK",3866
+"6",NA,"AK","Rocky De La Fuente","AK",1240
+"7",NA,"AL","Donald Trump","AL",1318255
+"8",NA,"AL","Hillary Clinton","AL",729547
+"9",NA,"AL","Gary Johnson","AL",44467
+"10",NA,"AL","Jill Stein","AL",9391
+"11",NA,"AR","Donald Trump","AR",684872
+"12",NA,"AR","Hillary Clinton","AR",380494
+"13",NA,"AR","Gary Johnson","AR",29829
+"14",NA,"AR","Evan McMullin","AR",13255
+"15",NA,"AR","Jill Stein","AR",9473
+"16",NA,"AR","Jim Hedges","AR",4709
+"17",NA,"AR","Darrell Castle","AR",4613
+"18",NA,"AR","Lynn Kahn","AR",3390
+"19",NA,"AZ","Donald Trump","AZ",1252401
+"20",NA,"AZ","Hillary Clinton","AZ",1161167
+"21",NA,"AZ","Gary Johnson","AZ",106327
+"22",NA,"AZ","Jill Stein","AZ",34345
+"23",NA,"CA","Hillary Clinton","CA",8753788
+"24",NA,"CA","Donald Trump","CA",4483810
+"25",NA,"CA","Gary Johnson","CA",478500
+"26",NA,"CA","Jill Stein","CA",278657
+"27",NA,"CA","Gloria La Riva","CA",66101
+"28",NA,"CO","Hillary Clinton","CO",1338870
+"29",NA,"CO","Donald Trump","CO",1202484
+"30",NA,"CO","Gary Johnson","CO",144121
+"31",NA,"CO","Jill Stein","CO",38437
+"32",NA,"CO","Evan McMullin","CO",28917
+"33",NA,"CO","Darrell Castle","CO",11699
+"34",NA,"CO","Chris Keniston","CO",5028
+"35",NA,"CO","Mike Smith","CO",1819
+"36",NA,"CO","Rocky De La Fuente","CO",1255
+"37",NA,"CO","Kyle Kopitke","CO",1096
+"38",NA,"CO","Joseph Maldonado","CO",872
+"39",NA,"CO","Michael Maturen","CO",862
+"40",NA,"CO","Rod Silva","CO",751
+"41",NA,"CO","Ryan Scott","CO",749
+"42",NA,"CO","Tom Hoefling","CO",710
+"43",NA,"CO","Gloria La Riva","CO",531
+"44",NA,"CO","Alyson Kennedy","CO",452
+"45",NA,"CO","Laurence Kotlikoff","CO",392
+"46",NA,"CO","Bradford Lyttle","CO",382
+"47",NA,"CO","Frank Atwood","CO",337
+"48",NA,"CO","Emidio Soltysik","CO",271
+"49",NA,"CO","Jim Hedges","CO",185
+"50",NA,"CT","Hillary Clinton","CT",897572
+"51",NA,"CT","Donald Trump","CT",673215
+"52",NA,"CT","Gary Johnson","CT",48676
+"53",NA,"CT","Jill Stein","CT",22841
+"54",NA,"DC","Hillary Clinton","DC",282830
+"55",NA,"DC","Donald Trump","DC",12723
+"56",NA,"DC","Gary Johnson","DC",4906
+"57",NA,"DC","Jill Stein","DC",4258
+"58",NA,"DE","Hillary Clinton","DE",235603
+"59",NA,"DE","Donald Trump","DE",185127
+"60",NA,"DE","Gary Johnson","DE",14757
+"61",NA,"DE","Jill Stein","DE",6103
+"62",NA,"FL","Donald Trump","FL",4617886
+"63",NA,"FL","Hillary Clinton","FL",4504975
+"64",NA,"FL","Gary Johnson","FL",207043
+"65",NA,"FL","Jill Stein","FL",64399
+"66",NA,"FL","Darrell Castle","FL",16475
+"67",NA,"FL","Rocky De La Fuente","FL",9108
+"68",NA,"GA","Donald Trump","GA",2089104
+"69",NA,"GA","Hillary Clinton","GA",1877963
+"70",NA,"GA","Gary Johnson","GA",125306
+"71",NA,"HI","Hillary Clinton","HI",266891
+"72",NA,"HI","Donald Trump","HI",128847
+"73",NA,"HI","Gary Johnson","HI",15954
+"74",NA,"HI","Jill Stein","HI",12737
+"75",NA,"HI","Darrell Castle","HI",4508
+"76",NA,"IA","Donald Trump","IA",800983
+"77",NA,"IA","Hillary Clinton","IA",653669
+"78",NA,"IA","Gary Johnson","IA",59186
+"79",NA,"IA","Evan McMullin","IA",12366
+"80",NA,"IA","Jill Stein","IA",11479
+"81",NA,"IA","Darrell Castle","IA",5335
+"82",NA,"IA","Lynn Kahn","IA",2247
+"83",NA,"IA","Dan Vacek","IA",2246
+"84",NA,"IA","Rocky De La Fuente","IA",451
+"85",NA,"IA","Gloria La Riva","IA",323
+"86",NA,"ID","Donald Trump","ID",409055
+"87",NA,"ID","Hillary Clinton","ID",189765
+"88",NA,"ID","Evan McMullin","ID",46476
+"89",NA,"ID","Gary Johnson","ID",28331
+"90",NA,"ID","Jill Stein","ID",8496
+"91",NA,"ID","Darrell Castle","ID",4403
+"92",NA,"ID","Scott Copeland","ID",2356
+"93",NA,"ID","Rocky De La Fuente","ID",1373
+"94",NA,"IL","Hillary Clinton","IL",3090729
+"95",NA,"IL","Donald Trump","IL",2146015
+"96",NA,"IL","Gary Johnson","IL",209596
+"97",NA,"IL","Jill Stein","IL",76802
+"98",NA,"IN","Donald Trump","IN",1557286
+"99",NA,"IN","Hillary Clinton","IN",1033126
+"100",NA,"IN","Gary Johnson","IN",133993
+"101",NA,"KS","Donald Trump","KS",671018
+"102",NA,"KS","Hillary Clinton","KS",427005
+"103",NA,"KS","Gary Johnson","KS",55406
+"104",NA,"KS","Jill Stein","KS",23506
+"105",NA,"KY","Donald Trump","KY",1202971
+"106",NA,"KY","Hillary Clinton","KY",628854
+"107",NA,"KY","Gary Johnson","KY",53752
+"108",NA,"KY","Evan McMullin","KY",22780
+"109",NA,"KY","Jill Stein","KY",13913
+"110",NA,"KY","Rocky De La Fuente","KY",1128
+"111",NA,"LA","Donald Trump","LA",1178638
+"112",NA,"LA","Hillary Clinton","LA",780154
+"113",NA,"LA","Gary Johnson","LA",37978
+"114",NA,"LA","Jill Stein","LA",14031
+"115",NA,"LA","Evan McMullin","LA",8547
+"116",NA,"LA","Darrell Castle","LA",3129
+"117",NA,"LA","Chris Keniston","LA",1881
+"118",NA,"LA","Tom Hoefling","LA",1581
+"119",NA,"LA","Laurence Kotlikoff","LA",1048
+"120",NA,"LA","Princess Jacob","LA",749
+"121",NA,"LA","Alyson Kennedy","LA",480
+"122",NA,"LA","Gloria La Riva","LA",446
+"123",NA,"LA","Jerry White","LA",370
+"124",NA,"MA","Hillary Clinton","MA",1995196
+"125",NA,"MA","Donald Trump","MA",1090893
+"126",NA,"MA","Gary Johnson","MA",138018
+"127",NA,"MA","Jill Stein","MA",47661
+"128",NA,"MD","Hillary Clinton","MD",1677928
+"129",NA,"MD","Donald Trump","MD",943169
+"130",NA,"MD","Gary Johnson","MD",79605
+"131",NA,"MD","Jill Stein","MD",35945
+"132",NA,"ME","Hillary Clinton","ME",357735
+"133",NA,"ME","Donald Trump","ME",335593
+"134",NA,"ME","Gary Johnson","ME",38105
+"135",NA,"ME","Jill Stein","ME",14251
+"136",NA,"MI","Donald Trump","MI",2279543
+"137",NA,"MI","Hillary Clinton","MI",2268839
+"138",NA,"MI","Gary Johnson","MI",172136
+"139",NA,"MI","Jill Stein","MI",51463
+"140",NA,"MI","Darrell Castle","MI",16139
+"141",NA,"MI","Emidio Soltysik","MI",2209
+"142",NA,"MN","Hillary Clinton","MN",1367716
+"143",NA,"MN","Donald Trump","MN",1322951
+"144",NA,"MN","Gary Johnson","MN",112972
+"145",NA,"MN","Evan McMullin","MN",53076
+"146",NA,"MN","Jill Stein","MN",36985
+"147",NA,"MN","Dan Vacek","MN",11291
+"148",NA,"MN","Darrell Castle","MN",9456
+"149",NA,"MN","Alyson Kennedy","MN",1672
+"150",NA,"MN","Rocky De La Fuente","MN",1431
+"151",NA,"MO","Donald Trump","MO",1594511
+"152",NA,"MO","Hillary Clinton","MO",1071068
+"153",NA,"MO","Gary Johnson","MO",97359
+"154",NA,"MO","Jill Stein","MO",25419
+"155",NA,"MO","Darrell Castle","MO",13092
+"156",NA,"MS","Donald Trump","MS",700714
+"157",NA,"MS","Hillary Clinton","MS",485131
+"158",NA,"MS","Gary Johnson","MS",14435
+"159",NA,"MS","Darrell Castle","MS",3987
+"160",NA,"MS","Jill Stein","MS",3731
+"161",NA,"MS","Jim Hedges","MS",715
+"162",NA,"MS","Rocky De La Fuente","MS",644
+"163",NA,"MT","Donald Trump","MT",279240
+"164",NA,"MT","Hillary Clinton","MT",177709
+"165",NA,"MT","Gary Johnson","MT",28037
+"166",NA,"MT","Jill Stein","MT",7970
+"167",NA,"MT","Rocky De La Fuente","MT",1570
+"168",NA,"NC","Donald Trump","NC",2362631
+"169",NA,"NC","Hillary Clinton","NC",2189316
+"170",NA,"NC","Gary Johnson","NC",130126
+"171",NA,"ND","Donald Trump","ND",216794
+"172",NA,"ND","Hillary Clinton","ND",93758
+"173",NA,"ND","Gary Johnson","ND",21434
+"174",NA,"ND","Jill Stein","ND",3780
+"175",NA,"ND","Darrell Castle","ND",1833
+"176",NA,"ND","Rocky De La Fuente","ND",364
+"177",NA,"NE","Donald Trump","NE",495961
+"178",NA,"NE","Hillary Clinton","NE",284494
+"179",NA,"NE","Gary Johnson","NE",38946
+"180",NA,"NE","Jill Stein","NE",8775
+"181",NA,"NH","Hillary Clinton","NH",348526
+"182",NA,"NH","Donald Trump","NH",345790
+"183",NA,"NH","Gary Johnson","NH",30777
+"184",NA,"NH","Jill Stein","NH",6496
+"185",NA,"NH","Rocky De La Fuente","NH",678
+"186",NA,"NJ","Hillary Clinton","NJ",2148278
+"187",NA,"NJ","Donald Trump","NJ",1601933
+"188",NA,"NJ","Gary Johnson","NJ",72477
+"189",NA,"NJ","Jill Stein","NJ",37772
+"190",NA,"NJ","Darrell Castle","NJ",6161
+"191",NA,"NJ","Alyson Kennedy","NJ",2156
+"192",NA,"NJ","Rocky De La Fuente","NJ",1838
+"193",NA,"NJ","Monica Moorehead","NJ",1749
+"194",NA,"NJ","Gloria La Riva","NJ",1682
+"195",NA,"NM","Hillary Clinton","NM",385234
+"196",NA,"NM","Donald Trump","NM",319667
+"197",NA,"NM","Gary Johnson","NM",74541
+"198",NA,"NM","Jill Stein","NM",9879
+"199",NA,"NM","Evan McMullin","NM",5825
+"200",NA,"NM","Darrell Castle","NM",1514
+"201",NA,"NM","Gloria La Riva","NM",1184
+"202",NA,"NM","Rocky De La Fuente","NM",475
+"203",NA,"NV","Hillary Clinton","NV",539260
+"204",NA,"NV","Donald Trump","NV",512058
+"205",NA,"NV","Gary Johnson","NV",37384
+"206",NA,"NV"," None of these candidates","NV",28863
+"207",NA,"NV","Darrell Castle","NV",5268
+"208",NA,"NV","Rocky De La Fuente","NV",2552
+"209",NA,"NY","Hillary Clinton","NY",4556124
+"210",NA,"NY","Donald Trump","NY",2819534
+"211",NA,"NY","Gary Johnson","NY",176598
+"212",NA,"NY","Jill Stein","NY",107934
+"213",NA,"OH","Donald Trump","OH",2841005
+"214",NA,"OH","Hillary Clinton","OH",2394164
+"215",NA,"OH","Gary Johnson","OH",174498
+"216",NA,"OH","Jill Stein","OH",46271
+"217",NA,"OH","Richard Duncan","OH",24235
+"218",NA,"OK","Donald Trump","OK",949136
+"219",NA,"OK","Hillary Clinton","OK",420375
+"220",NA,"OK","Gary Johnson","OK",83481
+"221",NA,"OR","Hillary Clinton","OR",1002106
+"222",NA,"OR","Donald Trump","OR",782403
+"223",NA,"OR","Gary Johnson","OR",94231
+"224",NA,"OR","Jill Stein","OR",50002
+"225",NA,"PA","Donald Trump","PA",2970733
+"226",NA,"PA","Hillary Clinton","PA",2926441
+"227",NA,"PA","Gary Johnson","PA",146715
+"228",NA,"PA","Jill Stein","PA",49941
+"229",NA,"PA","Darrell Castle","PA",21572
+"230",NA,"RI","Hillary Clinton","RI",252525
+"231",NA,"RI","Donald Trump","RI",180543
+"232",NA,"RI","Gary Johnson","RI",14746
+"233",NA,"RI","Jill Stein","RI",6220
+"234",NA,"RI","Rocky De La Fuente","RI",671
+"235",NA,"SC","Donald Trump","SC",1155389
+"236",NA,"SC","Hillary Clinton","SC",855373
+"237",NA,"SC","Gary Johnson","SC",49204
+"238",NA,"SC","Evan McMullin","SC",21016
+"239",NA,"SC","Jill Stein","SC",13034
+"240",NA,"SC","Darrell Castle","SC",5765
+"241",NA,"SC","Peter Skewes","SC",3246
+"242",NA,"SD","Donald Trump","SD",227721
+"243",NA,"SD","Hillary Clinton","SD",117458
+"244",NA,"SD","Gary Johnson","SD",20850
+"245",NA,"SD","Darrell Castle","SD",4064
+"246",NA,"46102","Hillary Clinton","SD",2510
+"247",NA,"46102","Donald Trump","SD",241
+"248",NA,"46102","Gary Johnson","SD",106
+"249",NA,"46102","Darrell Castle","SD",48
+"250",NA,"TN","Donald Trump","TN",1522925
+"251",NA,"TN","Hillary Clinton","TN",870695
+"252",NA,"TN","Gary Johnson","TN",70397
+"253",NA,"TN","Jill Stein","TN",15993
+"254",NA,"TN","Mike Smith","TN",7276
+"255",NA,"TN","Rocky De La Fuente","TN",4075
+"256",NA,"TN","Alyson Kennedy","TN",2877
+"257",NA,"TX","Donald Trump","TX",4685047
+"258",NA,"TX","Hillary Clinton","TX",3877868
+"259",NA,"TX","Gary Johnson","TX",283492
+"260",NA,"TX","Jill Stein","TX",71558
+"261",NA,"UT","Donald Trump","UT",515231
+"262",NA,"UT","Hillary Clinton","UT",310676
+"263",NA,"UT","Evan McMullin","UT",243690
+"264",NA,"UT","Gary Johnson","UT",39608
+"265",NA,"UT","Jill Stein","UT",9438
+"266",NA,"UT","Darrell Castle","UT",8032
+"267",NA,"UT","Rocky Giordani","UT",2752
+"268",NA,"UT","Rocky De La Fuente","UT",883
+"269",NA,"UT","Monica Moorehead","UT",544
+"270",NA,"UT","Alyson Kennedy","UT",521
+"271",NA,"VA","Hillary Clinton","VA",1981473
+"272",NA,"VA","Donald Trump","VA",1769443
+"273",NA,"VA","Gary Johnson","VA",118274
+"274",NA,"VA","Evan McMullin","VA",54054
+"275",NA,"VA","Jill Stein","VA",27638
+"276",NA,"VT","Hillary Clinton","VT",178573
+"277",NA,"VT","Donald Trump","VT",95369
+"278",NA,"VT","Gary Johnson","VT",10078
+"279",NA,"VT","Jill Stein","VT",6758
+"280",NA,"VT","Rocky De La Fuente","VT",1063
+"281",NA,"VT","Gloria La Riva","VT",327
+"282",NA,"WA","Hillary Clinton","WA",1742718
+"283",NA,"WA","Donald Trump","WA",1221747
+"284",NA,"WA","Gary Johnson","WA",160879
+"285",NA,"WA","Jill Stein","WA",58417
+"286",NA,"WA","Darrell Castle","WA",17623
+"287",NA,"WA","Alyson Kennedy","WA",4307
+"288",NA,"WA","Gloria La Riva","WA",3523
+"289",NA,"WI","Donald Trump","WI",1405284
+"290",NA,"WI","Hillary Clinton","WI",1382536
+"291",NA,"WI","Gary Johnson","WI",106674
+"292",NA,"WI","Jill Stein","WI",31072
+"293",NA,"WI","Darrell Castle","WI",12162
+"294",NA,"WI","Monica Moorehead","WI",1770
+"295",NA,"WI","Rocky De La Fuente","WI",1502
+"296",NA,"WV","Donald Trump","WV",489371
+"297",NA,"WV","Hillary Clinton","WV",188794
+"298",NA,"WV","Gary Johnson","WV",23004
+"299",NA,"WV","Jill Stein","WV",8075
+"300",NA,"WV","Darrell Castle","WV",3807
+"301",NA,"WY","Donald Trump","WY",174419
+"302",NA,"WY","Hillary Clinton","WY",55973
+"303",NA,"WY","Gary Johnson","WY",13287
+"304",NA,"WY","Jill Stein","WY",2515
+"305",NA,"WY","Darrell Castle","WY",2042
+"306",NA,"WY","Rocky De La Fuente","WY",709
