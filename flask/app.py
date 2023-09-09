@@ -5,7 +5,8 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func, text
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, Response, request
+
 
 import json
 
@@ -23,9 +24,11 @@ engine = create_engine("sqlite:///election.sqlite")
 app = Flask(__name__)
 
 
+
 #################################################
 # Flask Routes
 #################################################
+
 
 @app.route("/")
 def welcome():
@@ -39,14 +42,7 @@ def welcome():
 
 @app.route("/api/v1.0/federal")
 def names():
-    # # Create our session (link) from Python to the DB
-    # session = Session(engine)
 
-    # """Return a list of all passenger names"""
-    # # Query all passengers
-    # results = session.query(Passenger.county).all()
-
-    # session.close()
     winners = text("SELECT * FROM state")
     
 
@@ -63,7 +59,7 @@ def names():
         all_names.append(precip_dict)
         
         
-    fed = {"federal": all_names}
+    # fed = {"federal": all_names}
     result["federal"] = all_names
 
     states = text("select * from unique_state")
@@ -75,7 +71,7 @@ def names():
         # states_dict = {}
         # states_dict["state"]= state.state
         all_states.append(state.state)
-    stat = {"states": all_states}
+    # stat = {"states": all_states}
     result["states"] = all_states
 
 
@@ -85,31 +81,47 @@ def names():
     # Convert list of tuples into normal list
     
 
-    return jsonify(result)
+    return make_json_response(result)
+
+@app.route("/api/v1.0/federal2")
+def type2():
+
+    alabama = text("SELECT * FROM state order by state")
+    data = engine.execute(alabama)
+    result = {}
+    all_candidates = []
+    all_votes = []
+    not_list = []
+    great_list = []
+    precip_dict = {}
 
 
-# @app.route("/api/v1.0/passengers/<passenger_name>")
-# def passengers(passenger_name):
-#     # Create our session (link) from Python to the DB
-#     session = Session(engine)
 
-#     """Return a list of passenger data including the name, age, and sex of each passenger"""
-#     # Query all passengers
-#     results = session.query(Passenger.name, Passenger.age, Passenger.sex).all()
+    for record in (data):
 
-#     session.close()
 
-#     # Create a dictionary from the row data and append to a list of all_passengers
-#     all_passengers = []
-#     for name, age, sex in results:
-#         passenger_dict = {}
-#         if (passenger_name == name):
-#             passenger_dict["name"] = name
-#             passenger_dict["age"] = age
-#             passenger_dict["sex"] = sex
-#             all_passengers.append(passenger_dict)
+        
+        if record.state not in result: 
+            result[record.state] = {}
+        result[record.state][record.candidate]=record.votes
 
-#     return jsonify(all_passengers)
+      
+
+        
+
+    
+
+    # Convert list of tuples into normal list
+    
+
+    return make_json_response(result)
+
+
+def make_json_response(content) -> Response:
+    """Turns a piece of content into a json Response with CORS"""
+    response = jsonify(content)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 if __name__ == '__main__':
