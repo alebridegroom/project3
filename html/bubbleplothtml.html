@@ -1,118 +1,85 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Project 3</title>
+    <meta charset="UTF-8">
+    <title>Project 3</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqy8GrjGuhSHfkln5zHLsGtI4gSVwfU9Mp9w&usqp=CAU');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-rel="stylesheet"
-integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-crossorigin="anonymous"
-/>
-<link href="../static/css/base_style.css" rel="stylesheet" />
-
 <body>
-  <!-- Header -->
-  <h1>2016 Election Analysis</h1>
-  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-  <script>
-var xValues = ["Donald Trump", "Hillary Clinton", "Gary Johnson", "Jill Stein"];
-var yValues = [62984825, 65853516, 4489221, 1429596];
-var barColors = [
-  "Red",
-  "Blue",
-  "Yellow",
-  "Green"
-];
-new Chart("myChart", {
-  type: "pie",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: "Vote Count of 2016 POTUS"
-    }
-  }
-});
-</script>
-  <p>Intro analysis paragraph</p>
+    <h1 style="color: blue;">Election Demographics by County</h1>
+    <h2>Top Votes per State</h2>
+    <p>Select a County from the DropDown menu to discover the demographic results for each county in 2016</p>
+    <select id="selDataset" onchange="optionChanged(this.value)">
+        <option value="AK">Alaska</option>
+        <!-- Add more state options here -->
+    </select>
+    <canvas id="myBubbleChart" style="width: 100%; max-width: 600px;"></canvas>
 
+    <script>
+        // Replace the dummy data with your actual data
+        var bubbleData = [
+            { x: 50, y: 7, r: 10 },
+            { x: 60, y: 8, r: 12 },
+            { x: 70, y: 8, r: 14 },
+            { x: 80, y: 9, r: 16 },
+            { x: 90, y: 9, r: 18 },
+            { x: 100, y: 9, r: 20 },
+            { x: 110, y: 10, r: 22 },
+            { x: 120, y: 11, r: 24 },
+            { x: 130, y: 14, r: 26 },
+            { x: 140, y: 14, r: 28 },
+            { x: 150, y: 15, r: 30 }
+        ];
 
-  <style>
-    h1 {text-align: center;
-      line-height:7;
-    }
-    p {text-align: center;
-    }
-    </style>
+        var ctx = document.getElementById("myBubbleChart").getContext("2d");
 
-  <!-- Background Image -->
-  <style> 
-    body {
-      background-image: url("https://peterobi4presido.com/wp-content/uploads/2019/01/6-min.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-      background-repeat: no-repeat;
-      font-family: "Patrick Hand";
-}
-.navmenu {
-    background-color: #333;
-    overflow: hidden; 
-  }
-  
-  /* Style the links inside the navigation bar */
-  .navmenu a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 40px 100px;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .navmenu a:hover {
-    background-color: #ddd;
-    color: black;
-     
-  }
-  
-  /* Add a color to the active/current link */
-  .navmenu a.active {
-    background-color: #04AA6D;
-    color: white;
-
-  }
-    </style>
- 
-
-   <!-- nvbar with links -->
-    <div class="navmenu">
-      <a class="nav-item" href="/TBD">TBD</a>
-      <a class="nav-item" href="/map">Swing Sates</a>
-      <a class="nav-item" href="/TBD2">TBD2</a>
-    </div>
-    
-
-  <!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-crossorigin=""></script>
-
-<!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-crossorigin="" />
-
+        new Chart(ctx, {
+            type: "bubble",
+            data: {
+                datasets: [{
+                    data: bubbleData,
+                    backgroundColor: "rgba(0,0,255,0.5)", // Bubble color
+                    borderColor: "rgba(0,0,255,1)", // Border color
+                    borderWidth: 1,
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'X-Axis Label' // Customize the X-axis label
+                        },
+                        min: 40,
+                        max: 160
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Y-Axis Label' // Customize the Y-axis label
+                        },
+                        min: 6,
+                        max: 16
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
+
