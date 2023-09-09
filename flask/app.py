@@ -35,53 +35,12 @@ def welcome():
     """List all available api routes."""
     return (
         f"Available Routes:<br/>"
-        f"/api/v1.0/federal<br/>"
-        f"/api/v1.0/passengers"
+        f"/api/v1.0/federal2<br/>"
+
     )
 
 
-@app.route("/api/v1.0/federal")
-def names():
 
-    winners = text("SELECT * FROM state")
-    
-
-    data = engine.execute(winners)
-    all_names = []
-    result = {}
-    for record in data:
-        precip_dict = {}
-        
-        
-        precip_dict["state"] = record.state
-        precip_dict["candidate"] = record.candidate
-        precip_dict["votes"] = record.votes
-        all_names.append(precip_dict)
-        
-        
-    # fed = {"federal": all_names}
-    result["federal"] = all_names
-
-    states = text("select * from unique_state")
-    data2 = engine.execute(states)
-
-    all_states = []
-
-    for state in data2:
-        # states_dict = {}
-        # states_dict["state"]= state.state
-        all_states.append(state.state)
-    # stat = {"states": all_states}
-    result["states"] = all_states
-
-
-    
-    
-
-    # Convert list of tuples into normal list
-    
-
-    return make_json_response(result)
 
 @app.route("/api/v1.0/federal2")
 def type2():
@@ -89,11 +48,7 @@ def type2():
     alabama = text("SELECT * FROM state order by state")
     data = engine.execute(alabama)
     result = {}
-    all_candidates = []
-    all_votes = []
-    not_list = []
-    great_list = []
-    precip_dict = {}
+
 
 
 

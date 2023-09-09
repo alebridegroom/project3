@@ -16,41 +16,47 @@ d3.json(capsules).then(function(data) {
     d3.json(capsules).then(function(data) {
       // console.log(data);
       let states_filtered = data[us_states]
+
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: Object.keys(states_filtered),
+          datasets: [{
+            backgroundColor: "#ff028d",
+    
+
+            borderColor: "#4b006e",
+            data: Object.values(states_filtered)
+            
+          }]
+        },
+        options: {
+          legend: {display: false},
+          scales: {
+            yaxis: [{
+              ticks:{
+                beginAtZero:true
+              }
+            }]
+          },
+          title: {
+            display: true,
+            text: "state votes"
+          }
+        }
+      });
   
 
 
       // console.log(sample_values.slice(0,10).reverse())
   
-      let bar_graph = {
-        x: Object.keys(states_filtered),
-        //mapping the names if the id's to the graphs
-        y: Object.values(states_filtered),
-        type: "bar",
-
-        marker: {
-          color : '#cea2fd',
-          line: {
-            color: '#35063e',
-            width: 1.5
-          }
-  
-        }
-      };
-  
-      let layout = {
-        margin: {
-          l: 100,
-          r: 100,
-          t: 100,
-          b: 100
-        }
-      };
+      
   
       
-      final_graph = [bar_graph]
+      
       
       //plotting the graphs in there respective places
-      Plotly.newPlot("bar", final_graph, layout);
+      
       
     });
   }
