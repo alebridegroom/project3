@@ -129,7 +129,7 @@ function bubble_chart(hillary2){
     var data = [trace1, trace2, trace3, trace4];
     
     
-    var layout = {title: "Hillary Clinton voters", 
+    var layout = {title: "Census demographics info", 
     font:{
       color: "blue"
     },
@@ -144,135 +144,68 @@ function bubble_chart(hillary2){
   });
 }
 
-function donald_chart(donald){
-  d3.json(hillary).then(function(data) {
+function donald_chart(donald1){
+  d3.json(donald).then(function(data) {
     // console.log(data.alabama)
-    let states_filtered = data[donald]
+    let states_filtered = data[donald1]
     let county_array = []
-    let women_county = []
-    let employed_county = []
-    let unemployed_county = []
-    let poverty_county = []
-    let drive_county = []
+    let total_votes = []
+    let total_minority = []
+    let total_unemployed = 
+    yes_income = []
+    total_income = []
+
     for (let i = 0; i < states_filtered.length; i++){
       values = states_filtered[i]
       counties = values.county
       county_array.push(counties)
-      women_county.push(values.Women)
-      employed_county.push(values.employed)
-      unemployed_county.push(values.unemployed)
-      poverty_county.push(values.poverty)
-      drive_county.push(values.drive)
-      
+      total_votes.push(values.total_votes)
+      yes_income.push(values.above_24k)
+      total_income.push(values.mean_income)
+      total_minority.push(values.minority)
+      total_unemployed.push(values.unemployed)
 
-    
-      
       // console.log(counties)
 
     }
-    console.log(employed_county)
-    var trace1 = {
 
+    let census_graph = {
       x: county_array,
-    
-      y: poverty_county,
-    
-      name: 'Poverty',
-    
-      type: 'bar',
-
+      y: total_income,
+      mode: "markers",
+      // text: yes_income,
       marker: {
-        color : '#cea2fd',
+        color: yes_income,
+        colorscale: "Blackbody",
+        size: total_unemployed,
         line: {
           color: '#35063e',
           width: 1.5
         }
-
       }
       
-    
-    };
-    
-    
-    var trace2 = {
-    
-      x: county_array,
-    
-      y: employed_county,
-    
-      name: 'Employed',
-    
-      type: 'line',
-
-      marker: {
-        color : '#0343df',
-        line: {
-          color: '#00035b',
-          width: 1.5
-        }
-
-      }
-    
     };
 
-    var trace3 = {
-
-      x: county_array,
-    
-      y: unemployed_county,
-    
-      name: 'Unemployed',
-    
-      type: 'line',
-
-      marker: {
-        color : '#95d0fc',
-        line: {
-          color: '#8e82fe',
-          width: 1.5
-        }
-
-      }
-      
-    
+    let layout2 = {
+      title: "Income vs Counties",
+      xaxis: {title: "counties"},
+      yaxis:{title: "income"},
+      autsize: true,
+      margin: {
+        l: 100,
+        r: 50,
+        t: 50,
+        b: 50,
+      },
+      font:{
+        color: "Purple"
+      },
+      paper_bgcolor:"rgba(0,0,0,0)"
     };
 
-    var trace4 = {
+    final_buble = [census_graph]
 
-      x: county_array,
-    
-      y: drive_county,
-    
-      name: 'Drive',
-    
-      type: 'bar',
-
-      marker: {
-        color : '#75bbfd',
-        line: {
-          color: '#35063e',
-          width: 1.5
-        }
-
-      }
-      
-    
-    };
-    
-    
-    var data = [trace1, trace2, trace3, trace4];
-    
-    
-    var layout = {title: "Donald Trump voters", 
-    font:{
-      color: "red"
-    },
-    barmode: 'group',
-    paper_bgcolor:"rgba(0,0,0,0)"
-  };
-    
-    
-    Plotly.newPlot('bar3', data, layout);
+    Plotly.newPlot("bar3", final_buble, layout2);
     
     
   });

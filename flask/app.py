@@ -87,7 +87,8 @@ def demographics2()-> Response:
             test[stats.state]= []
         test[stats.state].append({"county": stats.county, "votes":stats.votes, "Women": stats.Women, "mean_income": stats.IncomePerCap, "employed": stats.Employed, 
                                   "unemployed":stats.Unemployment, "poverty": stats.Poverty,
-                                  "drive": stats.Drive})
+                                  "drive": stats.Drive, "total_votes": stats.total, "above_24k": stats.mean_income_above_24K,
+                                  "minority": stats.Minority})
         
         # test["women"]= stats.Women
 
