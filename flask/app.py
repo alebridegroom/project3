@@ -1,11 +1,9 @@
 import numpy as np
 
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func, text
+from sqlalchemy import create_engine,  text
 
-from flask import Flask, jsonify, Response, request
+from flask import Flask, jsonify, Response
 
 
 import json
@@ -40,62 +38,14 @@ def welcome():
     )
 
 
-@app.route("/api/v1.0/federal")
-def names():
-
-    winners = text("SELECT * FROM state")
-    
-
-    data = engine.execute(winners)
-    all_names = []
-    result = {}
-    for record in data:
-        precip_dict = {}
-        
-        
-        precip_dict["state"] = record.state
-        precip_dict["candidate"] = record.candidate
-        precip_dict["votes"] = record.votes
-        all_names.append(precip_dict)
-        
-        
-    # fed = {"federal": all_names}
-    result["federal"] = all_names
-
-    states = text("select * from unique_state")
-    data2 = engine.execute(states)
-
-    all_states = []
-
-    for state in data2:
-        # states_dict = {}
-        # states_dict["state"]= state.state
-        all_states.append(state.state)
-    # stat = {"states": all_states}
-    result["states"] = all_states
-
-
-    
-    
-
-    # Convert list of tuples into normal list
-    
-
-    return make_json_response(result)
-
 @app.route("/api/v1.0/federal2")
 def type2():
+
 
     alabama = text("SELECT * FROM state order by state")
     data = engine.execute(alabama)
     result = {}
-    all_candidates = []
-    all_votes = []
-    not_list = []
-    great_list = []
-    precip_dict = {}
-
-
+    
 
     for record in (data):
 
@@ -105,16 +55,44 @@ def type2():
             result[record.state] = {}
         result[record.state][record.candidate]=record.votes
 
-      
-
-        
-
-    
-
-    # Convert list of tuples into normal list
     
 
     return make_json_response(result)
+
+@app.route("/api/v1.0/census")
+def demographics()-> Response:
+    census = text("SELECT * from winners where candidate = 'Hillary Clinton'")
+    data = engine.execute(census)
+    test = {}
+    
+    for stats in (data):
+        if stats.state not in test:
+            test[stats.state]= []
+        test[stats.state].append({"county": stats.county, "votes":stats.votes, "Women": stats.Women, "mean_income": stats.IncomePerCap, "employed": stats.Employed, 
+                                  "unemployed":stats.Unemployment, "poverty": stats.Poverty,
+                                  "drive": stats.Drive})
+        
+        # test["women"]= stats.Women
+
+    return make_json_response(test)
+
+@app.route("/api/v1.0/census2")
+def demographics2()-> Response:
+    census = text("SELECT * from winners where candidate = 'Donald Trump'")
+    data = engine.execute(census)
+    test = {}
+    
+    for stats in (data):
+        if stats.state not in test:
+            test[stats.state]= []
+        test[stats.state].append({"county": stats.county, "votes":stats.votes, "Women": stats.Women, "mean_income": stats.IncomePerCap, "employed": stats.Employed, 
+                                  "unemployed":stats.Unemployment, "poverty": stats.Poverty,
+                                  "drive": stats.Drive})
+        
+        # test["women"]= stats.Women
+
+    return make_json_response(test)
+
 
 
 def make_json_response(content) -> Response:
@@ -124,5 +102,8 @@ def make_json_response(content) -> Response:
     return response
 
 
+
+
 if __name__ == '__main__':
     app.run(debug=True)
+
