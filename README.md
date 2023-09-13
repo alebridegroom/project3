@@ -1,4 +1,4 @@
-# project3 2016 Election Analysis 
+# Project3 2016 Election Analysis 
 
 ![image](https://github.com/alebridegroom/project3/assets/132726623/0cc46c84-6b31-4246-bd46-9958e9764584)
 
