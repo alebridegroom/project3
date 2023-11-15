@@ -134,7 +134,7 @@ function bubble_chart(hillary2){
       color: "blue"
     },
     barmode: 'group',
-    paper_bgcolor:"rgba(0,0,0,0)"
+    paper_bgcolor:"rgba(255,255,255,0.5)"
   };
     
     
@@ -200,7 +200,7 @@ function donald_chart(donald1){
       font:{
         color: "Purple"
       },
-      paper_bgcolor:"rgba(0,0,0,0)"
+      paper_bgcolor:"rgba(255,255,255,0.5)"
     };
 
     final_buble = [census_graph]
@@ -223,11 +223,15 @@ function donald_chart(donald1){
         type: "bar",
         data: {
           labels: Object.keys(states_filtered),
+          font: {color: "purple"},
           datasets: [{
+            align: "center",
             backgroundColor: "#ff028d",
             borderColor: "#4b006e",
             barPercentage: 1.09,
             borderWidth: 2,
+            hoverBackgroundColor: "blue",
+            
             data: Object.values(states_filtered)
             
           }]
@@ -235,15 +239,26 @@ function donald_chart(donald1){
         options: {
           legend: {display: false},
           scales: {
-            yaxis: [{
+            x: {
               ticks:{
-                beginAtZero:true
+                color: "blue"
+                // font: {color: "purple"}
+               
               }
-            }]
+            },
+            y: {
+              ticks:{
+                color: "blue"
+                // font: {color: "purple"}
+               
+              }
+            }
           },
           title: {
             display: true,
-            text: "state votes"
+            text: "State Votes",
+            font: {weight: 'bold'},
+
           }
         }
       });
